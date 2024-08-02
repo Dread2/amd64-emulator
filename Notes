@@ -1,19 +1,6 @@
-Notes on 64 Bit Mode
-64-bit mode implements register extensions through a group of instruction
-prefixes, called REX prefixes. These extensions add eight GPRs (R8–R15), widen all GPRs to 64 bits,
-and add eight YMM/XMM registers (YMM/XMM8–15). 
-64-Bit Addresses and Operands. In 64-bit mode, the default virtual-address size is 64 bits
-(implementations can have fewer). The default operand size for most instructions is 32 bits. For most
-instructions, these defaults can be overridden on an instruction-by-instruction basis using instruction
-prefixes. REX prefixes specify the 64-bit operand size and register extensions.
-RIP-Relative Data Addressing. 64-bit mode supports data addressing relative to the 64-bit
-instruction pointer (RIP). The legacy x86 architecture supports IP-relative addressing only in control40332 Rev 4.00 April 2020 AMD64 Architecture Programmer's Manual, Volumes 1-5
-Overview of the AMD64 Architecture 7
-24592—Rev. 3.22—December 2017 AMD64 Technology
-transfer instructions. RIP-relative addressing improves the efficiency of position-independent code
-and code that addresses global data.
-Opcodes. A few instruction opcodes and prefix bytes are redefined to allow register extensions and
-64-bit addressing. These differences are described in Appendix B “General-Purpose Instructions in
-64-Bit Mode” and Appendix C “Differences Between Long Mode and Legacy Mode” in Volume 3. 
-
-pg 38. 
+-Finished implementing 64-Bit Registers / 32-Bit
+-Finished implementing Operating Modes
+-ToDo:
+Memory Organization
+OPCodes
+Stack / Stack Pointer, Special Instructions (SSE, AVX, etc).
